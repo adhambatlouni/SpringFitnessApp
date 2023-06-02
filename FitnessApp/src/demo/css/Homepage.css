@@ -1,0 +1,14 @@
+.side-pane {
+    -fx-background-color: white;
+}
+
+.main-pane {
+    -fx-background-color: #F2F2F2;
+}
+
+.image-pane {
+    -fx-background-color: #0066EE;
+
+}
+
+

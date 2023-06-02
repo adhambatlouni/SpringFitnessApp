@@ -1,0 +1,12 @@
+.background {
+    -fx-background-color : #0066EE;
+}
+
+.signUp-pane {
+    -fx-background-color : white;
+}
+
+.signUp-btn {
+    -fx-background-color: #199FDC;
+    -fx-border-radius:20;
+}

@@ -1,0 +1,25 @@
+.background {
+    -fx-background-color : #0066EE;
+}
+
+.login-pane {
+    -fx-background-color : white;
+    -fx-alignment: center;
+}
+
+.login-btn {
+    -fx-background-color: #199FDC;
+    -fx-border-radius:20;
+}
+
+.toggle-btn {
+    -fx-background-color: #0066EE;
+}
+
+.shake {
+    -fx-border-color: red;
+    -fx-translate-x: 0;
+    -fx-translate-y: 0;
+    -fx-animation-duration: 0.1s;
+    -fx-animation-cycle: 5;
+}

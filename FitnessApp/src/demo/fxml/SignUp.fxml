@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor-pane-1" fx:id="parentAnchorPane"
+            maxHeight="600" maxWidth="550"
+            prefHeight="600" prefWidth="550"
+            styleClass="background"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="demo.controllers.SignUpController">
+    <stylesheets>
+        <URL value="@../css/SignUp.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="anchor-pane-2" fx:id="childAnchorPane"
+                  maxHeight="500" maxWidth="450"
+                  prefHeight="500" prefWidth="450"
+                  styleClass="signUp-pane" style="-fx-background-radius: 10;">
+         <children>
+            <VBox id="vbox-1" fx:id="childVbox"
+                  alignment="CENTER" spacing="10.0"
+                  maxHeight="400" maxWidth="350"
+                  prefHeight="400" prefWidth="350"
+                  styleClass="signUp-vbox">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" text="Sign Up" textFill="#505f66">
+                           <font>
+                              <Font name="SansSerif Bold" size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="usernamefield" promptText="Username" styleClass="username-text">
+                     <padding>
+                        <Insets bottom="10.0" left="8.0" right="8.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="6.0" left="8.0" right="8.0" top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="emailfield" promptText="Email" styleClass="email-text">
+                     <padding>
+                        <Insets bottom="10.0" left="8.0" right="8.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="6.0" left="8.0" right="8.0" top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="passwordfield" promptText="Password" styleClass="password-text">
+                     <padding>
+                        <Insets bottom="10.0" left="8.0" right="8.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="6.0" left="8.0" right="8.0" top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></PasswordField>
+                  <Button fx:id="signUpBtn" id="btn-1" alignment="CENTER" onAction="#signUp"
+                          prefHeight="26.0" prefWidth="122.0"
+                          styleClass="signUp-btn"
+                          text="Sign Up" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="14.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Already a member?" textFill="#505f66">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="2.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="loginLabel" onMouseClicked="#goToLogin" styleClass="login-click" text="Login Here" textFill="#199FDC">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets left="2.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

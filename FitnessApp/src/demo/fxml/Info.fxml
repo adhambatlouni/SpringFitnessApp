@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor-pane-1" fx:id="parentAnchorPane" maxHeight="800" maxWidth="750" prefHeight="800" prefWidth="750" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.controllers.InfoController">
+    <stylesheets>
+        <URL value="@../css/Info.css" />
+    </stylesheets>                                               
+    <children>
+        <AnchorPane id="anchor-pane-2" fx:id="childAnchorPane" maxHeight="700" maxWidth="650" prefHeight="700" prefWidth="650" style="-fx-background-radius: 10;" styleClass="info-pane">
+            <children>
+                <VBox id="vbox-1" fx:id="childVbox" alignment="CENTER" layoutX="50.0" layoutY="50.0" maxHeight="650.0" maxWidth="600" prefHeight="650.0" prefWidth="600.0" spacing="12.0" styleClass="login-vbox">
+               <children>
+                  <Label prefHeight="73.0" prefWidth="322.0" text="Please select which sex we should use to calculate your calorie needs:" textFill="#505f66" translateX="-125.0" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <VBox translateX="-5.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="198.0" text="Which one should I choose?" textFill="#505f66" translateX="-3.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                               <ComboBox fx:id="myComboBox1" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Gender">
+                                   <items>
+                                       <FXCollections fx:factory="observableArrayList">
+                                           <String fx:value="Male" />
+                                           <String fx:value="Female" />
+                                       </FXCollections>
+                                   </items>
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="6.0" right="12.0" top="6.0" />
+                                 </VBox.margin>
+                               </ComboBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="8.0" right="15.0" top="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox translateX="-5.0">
+                           <children>
+                              <Label text="Where do you live?" textFill="#505f66" translateX="-3.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="14.0" />
+                                 </VBox.margin>
+                              </Label>
+                               <ComboBox fx:id="myComboBox2" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Select your country">
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="12.0" right="6.0" top="6.0" />
+                                 </VBox.margin>
+                               </ComboBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="15.0" right="8.0" top="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="How tall are you (in Centimeters)?" textFill="#505f66" translateX="-3.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="userheight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Height">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="12.0" top="8.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="8.0" right="15.0" top="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label text="How much do you weight (in Kg)?" textFill="#505f66">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="userweight" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Weight">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="12.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="It's ok to estimate, you can update this later." textFill="#505f66">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="8.0" left="15.0" right="8.0" top="8.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="How old are you?" textFill="#505f66" translateX="-3.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="userage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Age" translateX="-12.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="6.0" right="12.0" top="6.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label text="Let's start with goals:" textFill="#505f66" translateX="12.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="myComboBox3" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" promptText="Select your Goal">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <String fx:value="Lose Weight" />
+                                       <String fx:value="Maintain Weight" />
+                                       <String fx:value="Gain Weight" />
+                                       <String fx:value="Gain Muscle" />
+                                       <String fx:value="Modify My Diet" />
+                                       <String fx:value="Manage Stress" />
+                                    </FXCollections>
+                                 </items>
+                                 <padding>
+                                    <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="12.0" right="6.0" top="6.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="349.0" text="We use these to calculate an accurate calorie goal." textFill="#505f66">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#addInfo" prefHeight="26.0" prefWidth="200.0" styleClass="nextBtn" text="NEXT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </padding>
+                  </Button>
+               </children></VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

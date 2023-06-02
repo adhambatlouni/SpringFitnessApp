@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parentAnchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.controllers.ProfileController">
+   <children>
+      <VBox fx:id="childVbox" alignment="CENTER" layoutX="208.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="100.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <SVGPath fx:id="profileIcon" content="M155.771,26.331C69.74,26.331,0,96.071,0,182.102c0,37.488,13.25,71.883,35.314,98.761             c3.404-27.256,30.627-50.308,68.8-61.225c13.946,12.994,31.96,20.878,51.656,20.878c19.233,0,36.894-7.487,50.698-19.936             c38.503,11.871,65.141,36.27,66.017,64.63c24.284-27.472,39.056-63.555,39.056-103.108             C311.541,96.071,241.801,26.331,155.771,26.331z M155.771,222.069c-9.944,0-19.314-2.732-27.634-7.464             c-20.05-11.409-33.855-34.756-33.855-61.711c0-38.143,27.583-69.176,61.489-69.176c33.909,0,61.489,31.033,61.489,69.176             c0,27.369-14.237,51.004-34.786,62.215C174.379,219.523,165.346,222.069,155.771,222.069z" fill="#0066ee" scaleX="0.3" scaleY="0.3" translateY="-50.0" />
+                        <ImageView fx:id="userImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateY="-50.0"/>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="5.0" translateY="-90.0">
+               <children>
+                  <Label fx:id="uploadLabel" onMouseClicked="#uploadPhoto" text="Upload Photo" textFill="#0066ee" translateY="-15.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" spacing="8.0">
+                           <children>
+                              <Label text="Username" textFill="#0066ee">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernametextfield" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" spacing="8.0">
+                           <children>
+                              <Label text="Email" textFill="#0066ee">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="emailtextfield" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <Button fx:id="updateBtn" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateUser" prefWidth="110.0" style="-fx-background-color: #0066EE; -fx-text-fill: white; -fx-background-radius: 20;" text="Update Profile">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="25.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="6.0" right="8.0" top="6.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

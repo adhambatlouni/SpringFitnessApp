@@ -1,0 +1,11 @@
+.background {
+    -fx-background-color : #0066EE;
+}
+
+.info-pane {
+    -fx-background-color: white;
+}
+
+.nextBtn {
+    -fx-background-color: #199FDC;
+}

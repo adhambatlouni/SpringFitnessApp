@@ -1,0 +1,12 @@
+.background {
+    -fx-background-color : #0066EE;
+}
+
+.startup-pane {
+    -fx-background-color : white;
+    -fx-alignment: center;
+}
+
+.startBtn {
+    -fx-background-color: #199FDC;
+}

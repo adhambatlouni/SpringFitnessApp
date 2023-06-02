@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane id="anchor-pane-1" fx:id="parentAnchorPane" maxHeight="600" maxWidth="550" prefHeight="600" prefWidth="550" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.controllers.StartupController">
+    <stylesheets>
+        <URL value="@../css/Startup.css" />
+    </stylesheets>
+    <children>
+            <VBox fx:id="child1" maxHeight="200" maxWidth="150" prefHeight="200" prefWidth="150">
+            <children>
+                <ImageView fitHeight="305.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateY="-210.0">
+                    <image>
+                        <Image preserveRatio="true" smooth="true" url="@../Images/fitness.jpeg" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+    </children>
+    <children>
+        <AnchorPane id="anchor-pane-2" fx:id="childAnchorPane" layoutX="32.0" layoutY="35.0" maxHeight="500" maxWidth="450" prefHeight="500" prefWidth="450" styleClass="startup-pane" style="-fx-background-radius: 10;">
+            <children>
+                <VBox id="vbox-1" fx:id="childVbox" alignment="CENTER" maxHeight="550.0" maxWidth="350" prefHeight="550.0" prefWidth="350" spacing="15.0" styleClass="login-vbox">
+
+                    <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Fitbit" textFill="#199fdc">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="8.0" right="8.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                        <Label alignment="CENTER" text="Welcome to the new" textFill="#505f66">
+                            <font>
+                                <Font name="System Bold" size="19.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" text="you!" textFill="#505f66">
+                            <font>
+                                <Font name="System Bold" size="19.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="237.0" text="Let's get you settled in and ready" textFill="#515f66cc">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="22.0" prefWidth="140.0" text="to crush your goals." textFill="#515f66cc">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Button fx:id="startBtn" onAction="#goToSignUp" prefHeight="40.0" prefWidth="131.0" styleClass="startBtn" text="Get Started" textFill="WHITE">
+                            <padding>
+                                <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                            </padding>
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="loginLabel" alignment="CENTER" onMouseClicked="#goToLogin" prefHeight="20.0" prefWidth="132.0" text="Log In" textFill="#199FDC">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+    <effect>
+        <ColorAdjust />
+    </effect>
+</AnchorPane>
